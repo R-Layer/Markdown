@@ -1,0 +1,88 @@
+@mixin textWindows {
+
+  width: 100%;
+  min-height: 300px;
+  padding:30px;
+  margin: 10px auto;
+  border-radius:5px;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: lightcyan;
+}
+
+article {
+    @include textWindows();
+    font: 400 1.2em Verdana, Arial;
+
+    color:green;
+    background:rgb(155, 243, 155);
+    border:2px solid green;    
+
+    overflow-wrap: break-word; 
+    overflow-y: auto;
+  }
+
+  textarea {
+    @include textWindows();
+    font: 400 1.4em Monospace;
+    
+    color:steelblue;
+    background:lightsteelblue;
+    border:2px solid steelblue;    
+    
+    resize: none;
+  }
+
+  span {
+    font: 300 1em Times;
+    padding: 10px;
+  }
+/*   aside {
+    position: absolute;
+    @include transition(.75s);
+    background-color: lightblue;
+    right: -100px;
+
+    &.open {
+      width: 700px;
+      background-color: lightgreen;
+    }
+    &.closed {
+      width: 200px;
+      background-color: lightblue;
+    }
+  }
+
+  section {
+    margin: 0px 100px;
+    overflow: hidden;
+  }
+
+   td {
+    
+    width: 50%;
+    text-align: left;
+    border-top: 1px dashed black;
+    padding-left: 20px;
+    &:nth-child(odd) {
+    font: 300 .8em Monospace; 
+    border-right: 1px solid black;
+    }
+
+   &:nth-child(even) {
+    font: 300 .7em Verdana, Arial; 
+    }
+
+}
+
+th {
+  font: 600 .9em Arial;
+  text-align: left;
+  padding-left: 20px;
+} */
+
+
